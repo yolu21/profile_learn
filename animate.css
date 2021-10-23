@@ -1,0 +1,63 @@
+* /*全部*/
+{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;/*寬高設定作用在邊框外緣的範圍內*/
+}
+body
+{
+    display:flex;   
+    justify-content: center;/*主軸對齊，橫*/
+    align-items: center;/*主軸對齊，直*/
+    min-height: 100vh;/*vh意思是view height，螢幕可視範圍高度的百分比；vw表示的是view width，也就是螢幕可視範圍寬度的百分比。*/
+    background-color: rgb(10, 0, 48);
+}
+.box
+{
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    display:flex;   
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    border-radius: 20px;
+}
+.box::before /*偽元素*/
+{
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 80%;
+    background: linear-gradient(#00ccff,#d400d4);
+    animation: animate 5s linear infinite;
+
+}
+
+.box::after /*偽元素*/
+{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: rgb(10, 0, 48);
+    border-radius: 16px;
+
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+/*--------------------------------用法解釋連結----------------------------------------*/
+/*flex: https://cythilya.github.io/2017/04/04/flexbox-basics/ */
+/*align-items: https://ithelp.ithome.com.tw/articles/10243443 */
+/*vh: https://pjchender.blogspot.com/2015/04/css-3vh-vw.html */
+/*before after偽元素 https://www.oxxostudio.tw/articles/201706/pseudo-element-1.html*/
+/*框的來源: https://www.youtube.com/watch?v=LYgQXOV-x24&t=2s&ab_channel=OnlineTutorials */
+/*解釋解釋htmlhead那串:https://www.itread01.com/content/1545759377.html */

@@ -1,0 +1,52 @@
+#about
+{
+    width: 100%;
+    height:90%;
+    position: relative;
+    z-index: 3;
+}
+h2{
+    color:rgb(108, 149, 185);
+    z-index: 3;
+    position: relative;
+    font-size: 4em;
+    left: 35%;
+    top:2%;
+}
+img 
+{
+    width: 300px;
+    position: relative;
+    left: 8%;
+    top:5%;
+}
+p{
+    color:azure;
+    z-index: 5;
+    font-size: 2em;
+    position: relative;
+    left: 45%;
+    top:-50%;
+}
+a{
+    position: relative;
+    left: 45%;
+    top:-50%;
+    font-size: 2em;
+    z-index: 10;
+}
+a:link {
+    text-decoration:none;                    /*還沒瀏覽過的連結樣式*/
+    color: rgb(255, 255, 255);  
+}
+a:visited {                                  /*已經瀏覽過的連結樣式*/
+    color: #00E3E3; 
+}
+a:hover {                                   /*滑鼠移上去樣式*/
+    text-decoration:none;
+    color: rgb(165, 165, 165);
+}
+a:active {                                  /*點擊當下樣式*/
+    text-decoration:none;
+    color: rgb(173, 122, 255);
+}
