@@ -1,17 +1,19 @@
 #about
 {
-    width: 100%;
-    height:90%;
-    position: relative;
-    z-index: 3;
+    width: 100%;/*width是用來調寬度的，那100%是以包在外面的div(也就是box)一樣大，也可以自己設80%或用px來設*/
+    height:90%;/*height是用來調高度的，同理上面，這個about高度就會是box的90%大*/
+    position: relative;/*這個是用來調位置，relative是指相對位置，相對於上一個程式碼的位置；*/
+                       /*另一個是absolute指的是絕對位置，從螢幕左上開始*/
+    z-index: 3;/*調z軸，有點類似做ppt裡的上移下移一層，數字越大越上面*/
 }
 h2{
-    color:rgb(108, 149, 185);
+    color:rgb(108, 149, 185);/*第一種改顏色的寫法，如果你用vscode把鼠標移到rgb前的方框，可以直接調顏色*/
     z-index: 3;
     position: relative;
-    font-size: 4em;
-    left: 35%;
-    top:2%;
+    font-size: 4em;/*雖然h1-h6可以有大小區分但還是會想調整得更好嘛，所以font-size是用來調大小，數字+em或px*/
+                   /*補充:font-family可以改字體*/
+    left: 35%;/*調位置，看原本position設定，把你的東西移到你覺得ok的位置，這裡就向左35%，那%數是依照你的div大小去判的，或是螢幕大小，一樣可以用px、vh*/
+    top:2%;/*一樣是調位置，距離上面2%，如果不知道是以誰為依據移動，其實就慢慢調、慢慢試，另外bottom、right也是調位置，但通常固定寫某兩個就好*/
 }
 img 
 {
@@ -21,7 +23,7 @@ img
     top:5%;
 }
 p{
-    color:azure;
+    color:azure;/*第二種改顏色的寫法，可以去查色碼表，會有顏色的名字*/
     z-index: 5;
     font-size: 2em;
     position: relative;
@@ -37,10 +39,10 @@ a{
 }
 a:link {
     text-decoration:none;                    /*還沒瀏覽過的連結樣式*/
-    color: rgb(255, 255, 255);  
+    color: rgb(255, 255, 255);  /*一般網頁點開都會是出現以瀏覽的顏色，開無痕開，就可以有位連結的樣式*/
 }
 a:visited {                                  /*已經瀏覽過的連結樣式*/
-    color: #00E3E3; 
+    color: #00E3E3; /*第三種改顏色的寫法，可以去查色碼表*/
 }
 a:hover {                                   /*滑鼠移上去樣式*/
     text-decoration:none;
